@@ -1,0 +1,16 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+           {{title}}
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <p>Veuillez entrer Le numero de Magasin</p>
+
+    <ion-item>
+        <ion-label>Numero de Magasin</ion-label>
+        <ion-input type="number" [(ngModel)]="NumberCheck"></ion-input>
+    </ion-item>
+    <button id="boutton-accueil" ion-button (click)="CheckNumber()" color="dark">Valider</button>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>Ajout des Produits</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item>
+            <ion-label color="primary">Nom Produit</ion-label>
+            <ion-input [(ngModel)]="label" type="text" placeholder="Nom du produit"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+            <ion-label color="primary">Seuil</ion-label>
+            <ion-input [(ngModel)]="threshold" type="number" placeholder="Limite du stock"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label color="primary">Id</ion-label>
+            <ion-input [(ngModel)]="id" type="number" placeholder="Id Produit"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label color="primary">Stock</ion-label>
+            <ion-input [(ngModel)]="stock" type="number" placeholder="Quantity stock"></ion-input>
+        </ion-item>
+
+    </ion-list>
+    <!--LA FONCTION INSERT DBB AJOUTERA ET VERIFIERA LES ENTREES DU FORMULAIRE-->
+        <button (click)="InsertDbb" ion-button full color="dark">Soumettre</button>
+
+</ion-content>

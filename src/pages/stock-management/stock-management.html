@@ -1,0 +1,28 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{title}}</ion-title>
+        <button ion-button (click)="ChargerPage()" color="dark">Ajouter</button>
+    </ion-navbar>
+
+</ion-header>
+<ion-content padding class="about">
+
+</ion-content>
+<market-header>
+
+</market-header>
+<ion-content>
+    <p>Listing des Produits</p>
+    <ul>
+        <li *ngFor="let article of Listestock">
+            Label :{{ article.label }};
+            Id :{{ article.id }};
+            Threshold :{{ article.threshold }};
+            Stock :{{ article.stock }};
+
+        </li>
+    </ul>
+
+
+</ion-content>
